@@ -1,0 +1,41 @@
+/* 清除所有内外边距 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置页面的字体大小 */
+body {
+    font-size: 14px;
+}
+
+/* 去掉li的小圆点 */
+li {
+    list-style: none;
+}
+
+/* 设置斜体文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 设置链接的字体颜色和取消下划线 */
+a {
+    color: #363636;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 鼠标经过链接时，颜色变化 */
+a:hover {
+    color:#1428a0
+}
+
+/* 设置图片的宽度 */
+img {
+    width: 100%;
+    border: none;                   /* 照顾低版本边框问题 */
+    vertical-align:middle;          /* 取消图片底边的空白缝隙 */
+}

@@ -1,0 +1,261 @@
+/* header-container */
+.header-container {
+    background-color: #fff;
+    border-bottom: 1px solid #dadada;
+}
+
+.header-logo-container,
+.header-btn-container,
+.header-nav-container {
+    height: 64px;
+}
+
+.header-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    width: 136px;
+    height: 100%;
+}
+
+.header-nav,
+.header-nav-item,
+.header-nav-link {
+    height: 100%;
+}
+
+.btn-toggle {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-toggle:hover {
+    background-color: #f9f9f9;
+}
+
+.btn-toggle-bar {
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: #363636;
+    border-radius: 2px;
+}
+
+.btn-toggle-bar+.btn-toggle-bar {
+    margin-top: 4px;
+}
+
+.btn-toggle:hover .btn-toggle-bar {
+    background-color: #1428a0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.header-nav-item {
+    margin-left: 24px;
+}
+
+.header-nav-item:first-child {
+    margin-left: 0px;
+}
+
+.header-nav-link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+
+
+/* nav-container */
+.nav-container {
+    overflow: hidden;
+    /* 解决收起之后有边框的问题 */
+    /* 设置一个定位，收起之后就设置为-1，和上面的边框重合 */
+    position: relative;
+    top: -1px;
+
+    height: 0px;
+    border-bottom: 1px solid #dadada;
+    transition: height 0.5s;
+}
+
+.nav-container-extended {
+    /* 展开的时候设置为0，就会显示出边框 */
+    top: 0;
+    height: 201px;
+}
+
+.nav-link {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+
+/* slider-container */
+.slider-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider-container .row {
+    background-color: #f5f5f5;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.slider-text-container {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.slider-subtitle {
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-rounded {
+    border: 1px solid #000;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-style: 16px;
+    transition: all 0.3s;
+}
+
+.btn-rounded:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 到中屏及以上的时候，改写样式 */
+@media (min-width:768px) {
+    .slider-container .row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* product-container */
+.product-img {
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* backtop-container */
+.backtop-container {
+    border-top: 1px solid #dadada;
+    margin: auto;
+}
+
+.backtop-container .row {
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+.backtop-container .row button {
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+
+/* helper-container */
+.helper-container {
+    background-color: #f5f5f5;
+}
+
+.helper-container .row {
+    height: 220px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-container p {
+    padding-top: 10px;
+}
+
+.backtop-btn {
+    background-color: #fafafa;
+    border: none;
+    float: right;
+}
+
+.help-container {
+    background-color: #f5f5f5;
+}
+
+.wzdt,
+.sssd,
+.fwzz,
+.gffx {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.help-container ul li:first-child {
+    font-weight: bold;
+}
+
+.help-container ul li {
+    margin-top: 5px;
+}
+
+/* footer-container */
+.footer-container {
+    height: 160px;
+    color: #fff;
+    background-color: rgb(47, 39, 39);
+}
+
+.footer-container .row {
+    margin-right: 0;
+    margin-top: 15px;
+}
+
+.footer-container .row span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-container .row p {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #999;
+}
